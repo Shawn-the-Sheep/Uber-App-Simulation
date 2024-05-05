@@ -20,3 +20,6 @@ are
 16. SORTBYNAME - an arraylist holding user references gets sorted by name and then displayed (keeping the change permanent)
 17. SORTBYWALLET - an arraylist holding user references gets sorted by wallet and then displayed (keeping the change permanent)
 18. REVENUE - displays the total revenue earned from the company's perspective
+
+We also note that for loadusers and loaddrivers, we are calling the methods in TMUberRegistered loadpreregistered users and loadpreregistered drivers which basically creates user and driver objects based on
+information provided in the text file which the user of the app provides. These text files must be of a certain form. An example of the correct form would be in the users.txt and drivers.txt that are provided. For the loading of users, each 3 lines basically corresponds to one user where the first line is the name of the user, the second line is the address, and the third line is the wallet. The drivers file is of the same general format except I believe every 4 lines corresponds to a driver.
